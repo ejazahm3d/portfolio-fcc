@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px) {
+  /* navbar  */
+  .navbar-end a {
+    font-size: 0.9rem;
+  }
+  .icons-social {
+    font-size: 1.8rem;
+  }
+  /* projects  */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  /* footer  */
+  .footer {
+    padding: 4rem 7rem;
+    text-align: center;
+  }
+  .footer .title {
+    font-size: 1.3rem;
+  }
+}

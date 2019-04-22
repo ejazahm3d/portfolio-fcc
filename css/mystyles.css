@@ -4,12 +4,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: normal 75% Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #393e46;
 }
 canvas {
   display: block;
-  vertical-align: bottom;
 }
 /* ---- particles.js container ---- */
 #particles-js {
@@ -87,6 +86,7 @@ canvas {
 #welcome-section {
   display: flex;
   height: 100vh;
+  width: 100%;
   color: #ffffff;
   justify-content: center;
   align-items: center;
@@ -115,8 +115,9 @@ canvas {
 /* projects section  */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 3rem;
+  max-width: 100%;
 }
 .project-tile-img {
   max-width: 100%;
@@ -125,19 +126,16 @@ canvas {
 }
 
 .footer {
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  padding: 4rem 7rem;
+  text-align: center;
 }
 /* utilities classes */
 .is-center {
   text-align: center;
 }
 .container {
+  padding: 3rem 5rem;
   margin: 3rem auto;
-  max-width: 90vw;
 }
 
 .colored-bg {
