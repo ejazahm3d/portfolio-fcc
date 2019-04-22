@@ -1,0 +1,115 @@
+/* particles js  */
+/* ---- reset ---- */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1;
+  background: #0052d4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6fb1fc,
+    #4364f7,
+    #0052d4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6fb1fc,
+    #4364f7,
+    #0052d4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* navbar  */
+#navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: #0052d4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6fb1fc,
+    #4364f7,
+    #0052d4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6fb1fc,
+    #4364f7,
+    #0052d4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #f6f6f6;
+}
+.navbar-brand {
+  justify-self: flex-start;
+  margin-left: 0.5rem;
+}
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-end a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.navbar-end a:hover {
+  background: #0052d4;
+  border-radius: 2px;
+}
+
+/* welcome section  */
+#welcome-section {
+  display: flex;
+  height: 100vh;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  font-size: 3rem;
+  margin: 0;
+}
+.subtitle {
+  font-size: 1.5rem;
+}
+.icons-social {
+  font-size: 3.5rem;
+}
+.icon-color {
+  color: #f6f6f6;
+}
+.icon-color:hover {
+  animation-name: hoverUpDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition: all;
+}
+
+/* utilities classes */
+.is-center {
+  text-align: center;
+}
