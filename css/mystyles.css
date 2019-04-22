@@ -5,6 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font: normal 75% Arial, Helvetica, sans-serif;
+  color: #393e46;
 }
 canvas {
   display: block;
@@ -74,6 +75,8 @@ canvas {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
+  transition: all;
+  transition-duration: 0.5s;
 }
 .navbar-end a:hover {
   background: #0052d4;
@@ -109,7 +112,48 @@ canvas {
   transition: all;
 }
 
+/* projects section  */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-gap: 3rem;
+}
+.project-tile-img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.footer {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 /* utilities classes */
 .is-center {
   text-align: center;
+}
+.container {
+  margin: 3rem auto;
+  max-width: 90vw;
+}
+
+.colored-bg {
+  background: #0052d4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6fb1fc,
+    #4364f7,
+    #0052d4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6fb1fc,
+    #4364f7,
+    #0052d4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #f6f6f6;
 }
