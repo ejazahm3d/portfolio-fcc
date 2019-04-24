@@ -84,13 +84,14 @@ canvas {
 
 /* welcome section  */
 #welcome-section {
-  display: flex;
+  display: grid;
   height: 100vh;
   width: 100%;
   color: #ffffff;
+  grid-template-columns: repeat(auto-fill(1fr));
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-content: center;
+  justify-items: center;
 }
 .title {
   font-size: 3rem;
